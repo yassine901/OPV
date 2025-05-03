@@ -1,0 +1,9 @@
+{%  extends 'base.html' %}
+{% block content %}
+<h1> {{book.title}}</h1>
+<p> {{book.quantity}}</p>
+<p> {{book.author.name}}</p>
+<p> <a href="{% url 'listBooks' %}">  Revenir à la liste des livres </a></p>
+
+
+{% endblock%}
